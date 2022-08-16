@@ -8,7 +8,7 @@ const nextPal = (result, steps = 0) => {
       return nextPal(++result, ++steps);
   };
 };
-function isPal(result) {
+const isPal = (result) => {
   let a = Number(result.toString().split('').reverse().join(''));
   if (a === result) return true;
   return false;
